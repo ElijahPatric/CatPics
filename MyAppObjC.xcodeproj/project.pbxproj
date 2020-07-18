@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF0A118F24BFD0D90008DA7C /* CatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0A118E24BFD0D90008DA7C /* CatCell.m */; };
+		CFC174A124AD67E500438D3E /* CatObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC174A024AD67E500438D3E /* CatObject.m */; };
+		CFC47F2C24AABFEF00F8BA93 /* CatCall.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC47F2B24AABFEF00F8BA93 /* CatCall.m */; };
 		CFE8B26E24A4271900A06EF7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE8B26D24A4271900A06EF7 /* AppDelegate.m */; };
 		CFE8B27124A4271900A06EF7 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE8B27024A4271900A06EF7 /* SceneDelegate.m */; };
 		CFE8B27424A4271900A06EF7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE8B27324A4271900A06EF7 /* ViewController.m */; };
@@ -37,6 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CF0A118D24BFD0D90008DA7C /* CatCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CatCell.h; sourceTree = "<group>"; };
+		CF0A118E24BFD0D90008DA7C /* CatCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CatCell.m; sourceTree = "<group>"; };
+		CFC174A024AD67E500438D3E /* CatObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CatObject.m; sourceTree = "<group>"; };
+		CFC174A224AD67F600438D3E /* CatObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CatObject.h; sourceTree = "<group>"; };
+		CFC47F2B24AABFEF00F8BA93 /* CatCall.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CatCall.m; sourceTree = "<group>"; };
+		CFC47F2E24AAC5E200F8BA93 /* CatCall.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CatCall.h; sourceTree = "<group>"; };
 		CFE8B26924A4271900A06EF7 /* MyAppObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyAppObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFE8B26C24A4271900A06EF7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CFE8B26D24A4271900A06EF7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -83,6 +92,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CFC174A324AD804500438D3E /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				CFC174A024AD67E500438D3E /* CatObject.m */,
+				CFC174A224AD67F600438D3E /* CatObject.h */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		CFC47F2A24AABF6C00F8BA93 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				CFE8B26C24A4271900A06EF7 /* AppDelegate.h */,
+				CFE8B26D24A4271900A06EF7 /* AppDelegate.m */,
+				CFE8B26F24A4271900A06EF7 /* SceneDelegate.h */,
+				CFE8B27024A4271900A06EF7 /* SceneDelegate.m */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		CFC47F2D24AAC3B900F8BA93 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CFE8B27224A4271900A06EF7 /* ViewController.h */,
+				CFE8B27324A4271900A06EF7 /* ViewController.m */,
+				CF0A118D24BFD0D90008DA7C /* CatCell.h */,
+				CF0A118E24BFD0D90008DA7C /* CatCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CFC47F2F24AAC76D00F8BA93 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				CFC47F2E24AAC5E200F8BA93 /* CatCall.h */,
+				CFC47F2B24AABFEF00F8BA93 /* CatCall.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		CFE8B26024A4271900A06EF7 = {
 			isa = PBXGroup;
 			children = (
@@ -106,12 +155,10 @@
 		CFE8B26B24A4271900A06EF7 /* MyAppObjC */ = {
 			isa = PBXGroup;
 			children = (
-				CFE8B26C24A4271900A06EF7 /* AppDelegate.h */,
-				CFE8B26D24A4271900A06EF7 /* AppDelegate.m */,
-				CFE8B26F24A4271900A06EF7 /* SceneDelegate.h */,
-				CFE8B27024A4271900A06EF7 /* SceneDelegate.m */,
-				CFE8B27224A4271900A06EF7 /* ViewController.h */,
-				CFE8B27324A4271900A06EF7 /* ViewController.m */,
+				CFC174A324AD804500438D3E /* Objects */,
+				CFC47F2F24AAC76D00F8BA93 /* Network */,
+				CFC47F2D24AAC3B900F8BA93 /* Views */,
+				CFC47F2A24AABF6C00F8BA93 /* Delegates */,
 				CFE8B27524A4271900A06EF7 /* Main.storyboard */,
 				CFE8B27B24A4271B00A06EF7 /* Assets.xcassets */,
 				CFE8B27D24A4271B00A06EF7 /* LaunchScreen.storyboard */,
@@ -273,8 +320,11 @@
 				CFE8B28224A4271B00A06EF7 /* main.m in Sources */,
 				CFE8B27424A4271900A06EF7 /* ViewController.m in Sources */,
 				CFE8B26E24A4271900A06EF7 /* AppDelegate.m in Sources */,
+				CFC47F2C24AABFEF00F8BA93 /* CatCall.m in Sources */,
+				CF0A118F24BFD0D90008DA7C /* CatCell.m in Sources */,
 				CFE8B27124A4271900A06EF7 /* SceneDelegate.m in Sources */,
 				CFE8B27A24A4271900A06EF7 /* MyAppObjC.xcdatamodeld in Sources */,
+				CFC174A124AD67E500438D3E /* CatObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
